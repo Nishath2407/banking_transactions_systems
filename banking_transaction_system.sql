@@ -75,6 +75,19 @@ SELECT * FROM CUSTOMERS WHERE NAME LIKE 'A%';
 
 
 SELECT CUSTOMER_ID,SUM(AMOUNT) AS TOTAL_AMOUNT FROM TRANSACTIONS GROUP BY CUSTOMER_ID;
+select customer_id,amount,sum(amount) over(partition by customer_id order by transaction_date) as running_total from transactions;
+
+select customer_id,name,account_balance,dense_rank() over(order by account_balance desc) as rank_position from customers;
+
+SELECT 
+    customer_id, AVG(amount) AS avg_amount
+FROM
+    transactions
+GROUP BY customer_id
+HAVING AVG(amount) > (SELECT 
+        AVG(amount)
+    FROM
+        transactions);
 
 
 
