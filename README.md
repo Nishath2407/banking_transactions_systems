@@ -1,6 +1,6 @@
 # banking_transactions_systems
 bfsi 1st repository
-## 🗂️ Database Structure
+## Database Structure
 
 The project consists of two main tables:
 
@@ -24,7 +24,7 @@ Stores transaction records:
 
 ---
 
-## ⚙️ Features & SQL Concepts Used
+##  Features & SQL Concepts Used
 
 - ✅ Table creation with constraints (Primary Key, Foreign Key)
 - ✅ Insert multiple records
@@ -39,7 +39,7 @@ Stores transaction records:
 
 ---
 
-## 📊 Sample Queries Included
+##  Sample Queries Included
 
 - Customers with balance greater than 10,000  
 - Transactions sorted by latest date  
@@ -53,7 +53,7 @@ Stores transaction records:
 
 ---
 
-## 🛠️ How to Run This Project
+##  How to Run This Project
 
 1. Install MySQL (or use XAMPP/phpMyAdmin)  
 2. Open MySQL console or phpMyAdmin  
@@ -66,7 +66,7 @@ Stores transaction records:
 
 ---
 
-## 🧠 Learning Outcomes
+##  Learning Outcomes
 
 - Understanding relational database design  
 - Writing optimized SQL queries  
@@ -75,16 +75,7 @@ Stores transaction records:
 
 ---
 
-## 📁 File Structure
+##  File Structure
 bank-system/
 │── bank_system.sql # Main SQL script
 │── README.md # Project documentation
-
----
-
-## 🚀 Future Improvements
-
-- Add stored procedures  
-- Implement triggers  
-- Build a frontend using PHP/HTML  
-- Connect with a real-time application  
